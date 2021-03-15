@@ -1,0 +1,9 @@
+version: '3'
+services:
+  next:
+    image: node:14.16-slim
+    network_mode: host
+    volumes:
+    - ./next:/next
+    working_dir: /next
+    command: bash ./script_start_container.sh
